@@ -1,0 +1,17 @@
+{
+  "name": "contractor-missed-call-dispatcher",
+  "version": "0.1.0",
+  "description": "Captures missed trade contractor calls, executes instant SMS text-backs, triages emergency plumbing/HVAC/electrical issues, and stages qualified estimates in Jobber, ServiceTitan, or calendar.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build:app": "bun build apps/call-dispatcher/src/main.tsx --outdir apps/call-dispatcher/dist --target browser --format esm --jsx-factory=h --jsx-fragment=Fragment --jsx-import-source=preact"
+  },
+  "dependencies": {
+    "preact": "10.29.8"
+  },
+  "peerDependencies": {
+    "@vellumai/plugin-api": "^0.10.0"
+  },
+  "vellum": {}
+}
